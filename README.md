@@ -22,5 +22,5 @@ ILogger log = new LoggerGenerator().SetMinumumLevel(LogLevel.Verbose)
                                    .Generate();
 log.Trace((Info i) => i.Push("Hello World!"));
 ```
-This will print "HelloWorld" to the console.
+This will print "HelloWorld!" to the console.
 
