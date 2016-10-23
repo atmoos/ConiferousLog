@@ -17,10 +17,10 @@ The most basic of set ups:
 
 ```csharp
 ConsoleSink sink = new ConsoleSink("example", new CultureInfo("en-UK"));
-ILogger log = new LoggerGenerator().SetMinumumLevel(LogLevel.Verbose)
+ILogger log = new LoggerGenerator().SetMinimumLevel(LogLevel.Verbose)
                                    .SetBroadband(sink)
                                    .Generate();
 log.Trace((Info i) => i.Push("Hello World!"));
 ```
-This will print "HelloWorld!" to the console.
+This will print "16:18:03 HelloWorld!" to the console.
 

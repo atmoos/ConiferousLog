@@ -120,7 +120,7 @@ namespace ConiferousLogTest.Loggers
 			Int32 expectedMsgCount = 1 + LogLevel.Error - minLevel;
 			MemorySink sink = new MemorySink("sink");
 			LoggerGenerator gen = new LoggerGenerator();
-			gen.SetMinumumLevel(minLevel);
+			gen.SetMinimumLevel(minLevel);
 			EmitAll(gen.SetBroadband(sink).Generate());
 			Assert.AreEqual(expectedMsgCount, sink.Count);
 		}
@@ -131,7 +131,7 @@ namespace ConiferousLogTest.Loggers
 			MemorySink infoSink = new MemorySink("infoSink");
 			MemorySink warningSink = new MemorySink("warningSink");
 			MemorySink errorSink = new MemorySink("errorSink");
-			LoggerGenerator gen = new LoggerGenerator().SetMinumumLevel(minLevel)
+			LoggerGenerator gen = new LoggerGenerator().SetMinimumLevel(minLevel)
 													   .SetLevelSinks(LogLevel.Verbose, verboseSink)
 													   .SetLevelSinks(LogLevel.Info, infoSink)
 													   .SetLevelSinks(LogLevel.Warning, warningSink)
@@ -148,7 +148,7 @@ namespace ConiferousLogTest.Loggers
 		{
 
 			MemorySink sink = new MemorySink("sink");
-			LoggerGenerator gen = new LoggerGenerator().SetMinumumLevel(LogLevel.Verbose)
+			LoggerGenerator gen = new LoggerGenerator().SetMinimumLevel(LogLevel.Verbose)
 													   .SetLevelSinks(expectedLevel, sink);
 			EmitAll(gen.Generate());
 			Assert.AreEqual(expectedLevel, sink.First().LogLevel);

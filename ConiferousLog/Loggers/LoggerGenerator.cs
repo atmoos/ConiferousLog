@@ -49,7 +49,7 @@ namespace ConiferousLog.Loggers
 
 		/// <summary>The minimum log level from which log messages are
 		/// to be written.</summary>
-		public LoggerGenerator SetMinumumLevel(LogLevel minLevel)
+		public LoggerGenerator SetMinimumLevel(LogLevel minLevel)
 		{
 			_minimumLevel = minLevel;
 			return this;
