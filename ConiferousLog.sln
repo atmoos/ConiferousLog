@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConiferousLog", "ConiferousLog\ConiferousLog.csproj", "{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D7E453F4-10FA-42EB-8C18-E18FB6F303C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConiferousLogTest", "Tests\ConiferousLogTest\ConiferousLogTest.csproj", "{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileName
+		$0.TextStylePolicy = $2
+		$2.FileWidth = 120
+		$2.inheritsSet = null
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$2.TabsToSpaces = False
+		$0.CSharpFormattingPolicy = $3
+		$3.SpacingAfterMethodDeclarationName = False
+		$3.SpaceAfterMethodCallName = False
+		$3.SpaceBeforeOpenSquareBracket = False
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+		$0.StandardHeader = $4
+		$4.Text = @\n ${FileName}\n\n This file is part of ConiferousLog\n \n Author: ${AuthorName} <${AuthorEmail}>\n \n Copyright (c) ${Year} ${CopyrightHolder}\n\n ConiferousLog is free software: you can redistribute it and/or modify\n it under the terms of the GNU Lesser General Public License as published by\n the Free Software Foundation, either version 3 of the License, or\n (at your option) any later version.\n\n ConiferousLog is distributed in the hope that it will be useful,\n but WITHOUT ANY WARRANTY; without even the implied warranty of\n MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n GNU Lesser General Public License for more details.\n\n You should have received a copy of the GNU Lesser General Public License\n along with ConiferousLog.  If not, see <http://www.gnu.org/licenses/>.
+		$4.IncludeInNewFiles = True
+		$0.NameConventionPolicy = $5
+		$5.Rules = $6
+		$6.NamingRule = $7
+		$7.Name = Type Parameters
+		$7.AffectedEntity = TypeParameter
+		$7.VisibilityMask = VisibilityMask
+		$7.NamingStyle = PascalCase
+		$7.IncludeInstanceMembers = True
+		$7.IncludeStaticEntities = True
+		$7.RequiredPrefixes = $8
+		$8.String = T
+		$7.RequiredSuffixes = $9
+		$9.String = Exception
+		description = A lightweight logging platform that supports arbitrary back ends.
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7BCFF69-31F9-404A-8D62-80FFF2A4EFD7} = {D7E453F4-10FA-42EB-8C18-E18FB6F303C4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0980FC34-6927-47C7-87BD-4A2BC56BBDF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ConiferousLog</RootNamespace>
+    <AssemblyName>ConiferousLog</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Description>The core API of ConiferousLog, which is a lightweight logging platform that supports arbitrary back ends.</Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Internals\Validation.cs" />
+    <Compile Include="Formatters\DefaultFormatter.cs" />
+    <Compile Include="Levels\Error.cs" />
+    <Compile Include="Levels\Info.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Levels\Verbose.cs" />
+    <Compile Include="Levels\Warning.cs" />
+    <Compile Include="Loggers\EmptyLogger.cs" />
+    <Compile Include="Loggers\LogSinks.cs" />
+    <Compile Include="Loggers\Logger.cs" />
+    <Compile Include="Loggers\LoggerGenerator.cs" />
+    <Compile Include="Sinks\AggregateSink.cs" />
+    <Compile Include="Sinks\ConsoleSink.cs" />
+    <Compile Include="Sinks\MemorySink.cs" />
+    <Compile Include="Core\ILogger.cs" />
+    <Compile Include="Core\IMessageFormatter.cs" />
+    <Compile Include="Core\ISink.cs" />
+    <Compile Include="Core\LogLevel.cs" />
+    <Compile Include="Core\LogMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internals\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
